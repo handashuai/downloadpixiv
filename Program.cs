@@ -11,10 +11,8 @@ namespace PixivDL
         public static void Main(string[] args)
         {
             //C:\Users\dsg\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
-            string startup =  Environment.GetFolderPath(Environment.SpecialFolder.Startup);
-
-            string common = Environment.GetFolderPath(Environment.SpecialFolder.Cookies);
-            Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu));
+            //string startup =  Environment.GetFolderPath(Environment.SpecialFolder.Startup);
+            //Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu));
             //C:\Users\dsg\AppData\Roaming
             Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
 
@@ -61,6 +59,7 @@ namespace PixivDL
                 Console.WriteLine(fs.Length);
                 if (maxlen == fs.Length)
                 {
+                    // 可以刷新 进度条UI
                     break;
                 }
             }
